@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <title>Watson Conversation Demo als Demo</title>
+    
+    <script type="text/javascript">
+    // <![CDATA[
+    	   var context = {
+    			    user: {
+    			        salutation: "Herr",
+    			        firstname: "Egon",
+    			        lastname: "Olsen"
+    			    }
+    	   }
+    	   
+    	   var emit = function(action) {
+    		   console.log(action);
+    	   }
+    // ]]>
+    </script>
+  </head>
+  <body>
+    <iframe src="https://www.adcubum.com/home"></iframe>
+    
+    <div class="wcs-bot-button" id="wcs-bot-button"></div>    
+    <iframe class="wcs-bot-window" id="wcs-bot-window" src="http://localhost:9080/chat"></iframe>
+  </body>
+</html>
